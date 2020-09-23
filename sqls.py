@@ -28,7 +28,7 @@ for year in years:
             )
             df = pd.DataFrame(crsr.fetchall())
             # print(df)
-            df.to_csv(f"./us_steel_imports_monthly/period{period}_agg2_tfImports_reporterUS_commcode72.csv", sep=",", index=False)
+            df.to_csv(f"./data/us_steel_imports_monthly/period{period}_agg2_tfImports_reporterUS_commcode72.csv", sep=",", index=False)
         except psycopg2.OperationalError:
             print("error occurred", period)
             pass
