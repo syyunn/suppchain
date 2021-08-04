@@ -1,5 +1,6 @@
 import datetime
 
+
 def change_to_datetime(date_string):
     year = None
     month = None
@@ -27,3 +28,14 @@ def change_to_datetime(date_string):
         return date
     else:
         assert len("hi") != 2
+
+
+def fill_up_to_2digit(string):
+    if len(string) == 1:
+        return "0" + string
+    elif len(string) == 2:
+        return string
+    else:
+        import sys
+
+        sys.exit("Error message")
